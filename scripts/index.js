@@ -22,11 +22,12 @@ editButton.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
   popup.classList.remove("popup_show");
 });
-// envio de cambio de datos
+// Cambio de datos
 profileForm.addEventListener("submit", (evt) => {
   evt.preventDefault();
   profileName.textContent = nameInput.value;
   profileRole.textContent = aboutInput.value;
+  popup.classList.remove("popup_show");
 });
 // Like
 let hearts = document.querySelectorAll(".heart");
