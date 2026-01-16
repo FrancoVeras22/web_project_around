@@ -79,6 +79,38 @@
 .popup__save-button:hover {
   opacity: 80%;
 }
+
+.popup__content__image {
+  max-width: 75vw;
+  max-height: 75vh;
+  height: auto;
+  width: auto;
+  display: flex;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+.popup__image {
+  max-width: 100%;
+  object-fit: cover;
+  max-width: 75vw;
+  max-height: 75vh;
+  height: auto;
+  width: auto;
+  display: flex;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+.popup__content-title {
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 10px);
+  margin: 0;
+}
 @media screen and (max-width: 880px) {
   .popup__content {
     width: 88vw;
@@ -101,6 +133,29 @@
     width: 74vw;
     max-width: 358px;
     height: 26px;
+  }
+  .popup__content__image {
+    max-width: 75vw;
+    max-height: 75vh;
+    height: auto;
+    width: auto;
+    display: flex;
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
+  .popup__image {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .popup__content-title {
+    font-size: 12px;
+    line-height: 15px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: calc(100% + 10px);
+    margin: 0;
   }
 
   .popup__save-button {
