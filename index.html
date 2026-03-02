@@ -47,8 +47,8 @@
         </button>
 
       </section>
-      <div class="popup">
-        <div class="popup__content">
+      <div class="popup" id="popup-profile">
+        <div class="popup__content" id="popup__content">
           <h2 class="popup__content-title">Editar perfil</h2>
           <form class="popup__form">
             <input
@@ -56,20 +56,30 @@
               name="Nombre"
               placeholder="Nombre"
               class="popup__name popup__input"
+              required
+              minlength="4"
+              maxlength="20"
+              id="profile-name"
             />
+            <span class="popup__error__name" id="profile-name-error"></span>
             <input
               type="text"
               name="Acerca"
               placeholder="Acerca de mi"
               class="popup__about popup__input"
+              required
+              minlength="2"
+              maxlength="200"
+              id="profile-about"
             />
+            <span class="popup__error__about" id="profile-about-error"></span>
             <button type="submit" class="popup__save-button">Guardar</button>
           </form>
           <button class="popup__close-button"></button>
         </div>
       </div>
       <div class="popup" id="popup-place">
-        <div class="popup__content">
+        <div class="popup__content" id="popup__content">
           <h2 class="popup__content-title">Nuevo Lugar</h2>
           <form class="popup__form">
             <input
@@ -77,13 +87,21 @@
               name="Place"
               placeholder="Place"
               class="popup__place popup__input"
+               minlength="2"
+              maxlength="30"
+              required
+              id="place-title"
             />
+            <span class="popup__error__title" id="place-title-error"></span>
             <input
               type="url"
               name="image"
               placeholder="image"
               class="popup__image popup__input"
+              id="place-url"
+              required
             />
+            <span class="popup__error__url" id="place-url-error"></span>
             <button type="submit" class="popup__save-button">Guardar</button>
           </form>
           <button class="popup__close-button"></button>

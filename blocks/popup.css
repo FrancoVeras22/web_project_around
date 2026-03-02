@@ -168,10 +168,29 @@
 }
 
 @media screen and (max-width: 550px) {
-  .popup {
-  }
   .popup__close-button {
     right: 0;
     top: -50px;
   }
+}
+
+input:focus {
+  outline: none;
+  border-color: #535353;
+}
+
+input:valid {
+  border-color: #4caf50;
+}
+
+input:invalid {
+  border-color: #f44336;
+}
+
+.popup__save-button:hover {
+  background-color: #45a049;
+}
+
+.popup__save-button:disabled {
+  background-color: #535353;
 }
